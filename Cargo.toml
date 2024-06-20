@@ -8,5 +8,6 @@ license = "GPL-3.0"
 homepage = "https://github.com/ay0ks/peek-buffer"
 repository = "https://github.com/ay0ks/peek-buffer"
 keywords = ["buffer", "peekable", "parsing"]
+readme = "README.md"
 
 [dependencies]
