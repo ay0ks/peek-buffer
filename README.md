@@ -1,8 +1,10 @@
 # peek-buffer [![Crates.io Version](https://img.shields.io/crates/v/peek-buffer)](https://crates.io/crates/peek-buffer) [![docs.rs](https://img.shields.io/docsrs/peek-buffer)](https://docs.rs/peek-buffer/)
------
+
+---
+
 Essential for parsing.
 
-```rs
+```rust
 let mut buffer = PeekBuffer::from("Hello, World!");
 
 // peek without consuming
