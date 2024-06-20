@@ -21,6 +21,8 @@ where
             data,
             history: Vec::new(),
             index: 0,
+            line: 1,
+            column: 0,
             history_index: 0,
         }
     }
