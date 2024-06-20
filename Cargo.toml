@@ -1,10 +1,12 @@
 [package]
 name = "peek-buffer"
+description = "Generic-typed buffer with ability to peek into the future! (And the past too.)"
 version = "0.1.0"
 edition = "2021"
 authors = ["Dimitriy \"ay0ks\" <ay0o0ks000@gmail.com>"]
 license = "GPL-3.0"
 homepage = "https://github.com/ay0ks/peek-buffer"
 repository = "https://github.com/ay0ks/peek-buffer"
+keywords = ["buffer", "peekable", "parsing"]
 
 [dependencies]
