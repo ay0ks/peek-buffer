@@ -27,6 +27,10 @@ where
         }
     }
 
+    pub fn len(&self) -> usize {
+        self.data.len()
+    }
+
     pub fn peek_at(&self, index: usize) -> Option<&T> {
         if index >= self.data.len() {
             None
@@ -308,4 +312,18 @@ where
 #[cfg(test)]
 mod tests {
     use super::PeekBuffer;
+
+    #[test]
+    fn test_init() {
+        let buffer = PeekBuffer::new(vec![1, 2, 3, 4, 5]);
+
+        assert_eq!(buffer.data, vec![1, 2, 3, 4, 5]);
+        assert_eq!(buffer.history, Vec::new());
+        assert_eq!(buffer.len(), 5);
+
+        assert_eq!(buffer.index, 0);
+        assert_eq!(buffer.line, 1);
+        assert_eq!(buffer.column, 0);
+        assert_eq!(buffer.history_index, 0);
+    }
 }
